@@ -1,0 +1,115 @@
+@import '../../assets/styles/variables';
+
+.filtersWrapper {
+  margin: 24px;
+  width: calc(60% + 24px);
+  background: #FFFFFF;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 24px 20px;
+
+  .filtersTitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $blueColor;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  .filtersContainer {
+    display: flex;
+
+    .containerTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #A8B8CA;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .categoriesContainer {
+
+      .categoriesList {
+        display: flex;
+        flex-wrap: wrap;
+
+        .categoryItem {
+          color: $blueColor;
+          order: 0;
+          flex-grow: 0;
+          margin-right: 10px;
+          border-radius: 8px;
+          border: 1px solid $blueColor;
+          padding: 2px 8px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: 0.2s;
+
+          &.isActive {
+            background-color: $blueColor;
+            color: white;
+          }
+          &:hover{
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .statusContainer {
+      margin-top: 10px;
+      margin-left: 14px;
+
+      .checkboxContent {
+        display: flex;
+
+        .statusItem {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.96);
+          display: flex;
+          align-items: center;
+
+          input {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 4px;
+          }
+
+          &:first-child {
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    width: calc(100% - 90px);
+  }
+  @media all and (max-width: 700px) {
+    .filtersContainer {
+      flex-direction: column;
+
+      .categoriesContainer {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

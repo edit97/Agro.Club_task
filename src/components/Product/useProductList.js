@@ -3,15 +3,17 @@ import { useCallback, useEffect, useReducer } from 'react'
 const initialState = {
   filter: {
     isNew: false,
+    isLimited: false,
+    search: '',
     category: [],
   },
-  status: 'idle', // idle | work | success | error
+  status: 'idle',
   items: [],
 }
 const reducer = (state, action) => {
-  console.log(`Action: ${action.type}; Payload:`, action.payload)
   switch (action.type) {
     case 'filter:change': {
+      console.log(`Action: ${action.type}; Payload:`, action.payload)
       return {
         ...state,
         status: 'work',
@@ -57,11 +59,14 @@ export const useProductList = () => {
   const resetFilter = useCallback(() => dispatch({ type: 'filter:reset' }), [])
   const performRequest = useCallback(() => {
     dispatch({ type: 'request:start' })
-    // prettier-ignore
-    const serializeFilter = filter => [
-      ...filter.category.map(categoryId => `category[]=${categoryId}`),
-      `isNew=${filter.isNew}`,
-    ].join('&')
+
+    const serializeFilter = filter =>
+      [
+        ...filter.category.map(categoryId => `category[]=${categoryId}`),
+        `isNew=${filter.isNew}`,
+        `isLimited=${filter.isLimited}`,
+        `search=${filter.search}`,
+      ].join('&')
 
     fetch(`/api/product?${serializeFilter(state.filter)}`)
       .then(res => {
