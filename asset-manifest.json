@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Agro.Club_task/static/css/main.950ab934.chunk.css",
+    "main.js": "/Agro.Club_task/static/js/main.c6b3fd69.chunk.js",
+    "main.js.map": "/Agro.Club_task/static/js/main.c6b3fd69.chunk.js.map",
+    "runtime-main.js": "/Agro.Club_task/static/js/runtime-main.0599e44b.js",
+    "runtime-main.js.map": "/Agro.Club_task/static/js/runtime-main.0599e44b.js.map",
+    "static/css/2.d1c75e18.chunk.css": "/Agro.Club_task/static/css/2.d1c75e18.chunk.css",
+    "static/js/2.ea14f00a.chunk.js": "/Agro.Club_task/static/js/2.ea14f00a.chunk.js",
+    "static/js/2.ea14f00a.chunk.js.map": "/Agro.Club_task/static/js/2.ea14f00a.chunk.js.map",
+    "index.html": "/Agro.Club_task/index.html",
+    "static/css/2.d1c75e18.chunk.css.map": "/Agro.Club_task/static/css/2.d1c75e18.chunk.css.map",
+    "static/css/main.950ab934.chunk.css.map": "/Agro.Club_task/static/css/main.950ab934.chunk.css.map",
+    "static/js/2.ea14f00a.chunk.js.LICENSE.txt": "/Agro.Club_task/static/js/2.ea14f00a.chunk.js.LICENSE.txt",
+    "static/media/Barley.6ae60696.png": "/Agro.Club_task/static/media/Barley.6ae60696.png",
+    "static/media/Canola.edf797c9.png": "/Agro.Club_task/static/media/Canola.edf797c9.png",
+    "static/media/Corn.5d9d931d.png": "/Agro.Club_task/static/media/Corn.5d9d931d.png",
+    "static/media/Oats.c98c863a.png": "/Agro.Club_task/static/media/Oats.c98c863a.png",
+    "static/media/Soybeans.266a163b.png": "/Agro.Club_task/static/media/Soybeans.266a163b.png",
+    "static/media/Wheat.3fb52b52.png": "/Agro.Club_task/static/media/Wheat.3fb52b52.png",
+    "static/media/ic_filter.0682fbe7.svg": "/Agro.Club_task/static/media/ic_filter.0682fbe7.svg",
+    "static/media/ic_search.3b551ad1.svg": "/Agro.Club_task/static/media/ic_search.3b551ad1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0599e44b.js",
+    "static/css/2.d1c75e18.chunk.css",
+    "static/js/2.ea14f00a.chunk.js",
+    "static/css/main.950ab934.chunk.css",
+    "static/js/main.c6b3fd69.chunk.js"
+  ]
+}
